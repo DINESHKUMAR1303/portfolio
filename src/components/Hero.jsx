@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Download } from 'lucide-react';
+import resumePdf from '../assets/resume.pdf';
 
 const Hero = () => {
     return (
@@ -31,7 +32,7 @@ const Hero = () => {
                         <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                     </a>
                     <a
-                        href={`${import.meta.env.BASE_URL}resume.pdf`}
+                        href={resumePdf}
                         download="Dinesh_Kumar_Resume.pdf"
                         className="px-8 py-3 border border-gray-700 bg-white/5 backdrop-blur-sm rounded-full font-medium text-gray-300 hover:text-white hover:border-gray-500 transition-all duration-300 flex items-center gap-2"
                     >
