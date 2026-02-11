@@ -1,0 +1,38 @@
+CONTACT FORM SETUP INSTRUCTIONS
+===============================
+
+The contact form is currently in "Simulation Mode". It shows a success message but DOES NOT send emails because it needs your personal EmailJS keys.
+
+TO ENABLE REAL EMAILS (Takes 2 minutes):
+
+1.  Register for free at: https://www.emailjs.com/
+2.  Login and click "Add New Service" -> select "Gmail".
+    *   This gives you a SERVICE_ID (e.g., service_abc123).
+3.  Click "Email Templates" -> "Create New Template".
+    *   This gives you a TEMPLATE_ID (e.g., template_xyz789).
+4.  Click on your name/avatar in the top right -> "Account" -> "API Keys" -> "Public Key".
+    *   This gives you a PUBLIC_KEY (e.g., user_12345).
+
+ONCE YOU HAVE THE KEYS:
+
+1.  Open correct file: c:\NSCHOOL\PORTFOLIO\src\components\Contact.jsx
+2.  Find lines 14-36 inside the `sendEmail` function.
+3.  Delete the simulation code and uncomment the real code.
+4.  Replace the placeholders with your new keys.
+
+EXAMPLE OF FINAL CODE:
+----------------------
+const SERVICE_ID = 'service_abc123';
+const TEMPLATE_ID = 'template_xyz789';
+const PUBLIC_KEY = 'user_12345';
+
+emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+   .then(() => {
+       setIsSent(true);
+       e.target.reset();
+   }, (error) => {
+       alert("Failed...");
+   });
+----------------------
+
+After saving, the form will send real emails to your Gmail!
