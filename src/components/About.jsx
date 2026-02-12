@@ -3,7 +3,7 @@ import { User, Award, Code } from 'lucide-react';
 
 const About = () => {
     return (
-        <section id="about" className="py-20 bg-dark/50">
+        <section id="about" className="py-20 bg-transparent">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl md:text-4xl font-bold font-heading text-center mb-16">
                     About <span className="gradient-text">Me</span>

@@ -16,7 +16,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="py-20 bg-dark relative overflow-hidden">
+        <section id="skills" className="py-20 bg-transparent relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-[20%] left-[10%] w-[300px] h-[300px] bg-primary/10 rounded-full blur-[80px] -z-10"></div>
             <div className="absolute bottom-[20%] right-[10%] w-[300px] h-[300px] bg-secondary/10 rounded-full blur-[80px] -z-10"></div>

@@ -4,7 +4,7 @@ import resumePdf from '../assets/resume.pdf';
 
 const Hero = () => {
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-dark">
+        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-transparent">
             {/* Background Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
                 <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/20 rounded-full blur-[100px] animate-float"></div>

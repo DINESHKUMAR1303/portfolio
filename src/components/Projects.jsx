@@ -3,7 +3,7 @@ import { ExternalLink, Github, Layers, Code } from 'lucide-react';
 
 const Projects = () => {
     return (
-        <section id="projects" className="py-20 bg-dark">
+        <section id="projects" className="py-20 bg-transparent">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl md:text-4xl font-bold font-heading text-center mb-16">
                     Featured <span className="gradient-text">Projects</span>

@@ -3,8 +3,10 @@ import { Calendar, MapPin, Briefcase } from 'lucide-react';
 
 const Experience = () => {
     return (
-        <section id="experience" className="py-20 bg-dark/50">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="experience" className="py-20 bg-transparent">
+            {/* Creative IT Background Elements Removed - Using Global Background */}
+
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <h2 className="text-3xl md:text-4xl font-bold font-heading text-center mb-16">
                     Work <span className="gradient-text">Experience</span>
                 </h2>
