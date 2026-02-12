@@ -19,19 +19,10 @@ const About = () => {
                                 With a solid understanding of front-end and back-end development, I am experienced in designing and implementing responsive, user-friendly web applications.
                             </p>
                             <p className="text-gray-300 mb-6 leading-relaxed">
-                                Currently working as a Software Trainer at Vivid Trans Tech Solution, I enjoy bridging the gap between theoretical concepts and practical applications, helping others master modern web technologies.
+                                Worked as a Software Trainer at Vivid Trans Tech Solution, I enjoy bridging the gap between theoretical concepts and practical applications, helping others master modern web technologies.
                             </p>
 
-                            <div className="grid grid-cols-2 gap-4 mt-8">
-                                <div className="p-4 bg-dark/50 rounded-lg border border-gray-700 text-center">
-                                    <span className="block text-3xl font-bold text-primary mb-1">2+</span>
-                                    <span className="text-sm text-gray-400">Years Experience</span>
-                                </div>
-                                <div className="p-4 bg-dark/50 rounded-lg border border-gray-700 text-center">
-                                    <span className="block text-3xl font-bold text-secondary mb-1">5+</span>
-                                    <span className="text-sm text-gray-400">Projects Completed</span>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
 

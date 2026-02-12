@@ -16,24 +16,24 @@ const Experience = () => {
                         <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-dark shadow-[0_0_0_4px_rgba(59,130,246,0.3)]"></div>
 
                         <div className="glass p-6 md:p-8 rounded-xl hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 group">
-                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div className="flex flex-col md:flex-row md:items-start justify-between mb-4">
                                 <div>
-                                    <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-primary transition-colors">Software Trainer</h3>
-                                    <h4 className="text-lg text-gray-300 mt-1 font-medium">Vivid Trans Tech Solution Private Limited</h4>
+                                    <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-primary transition-colors">Vivid Trans Tech Solution Private Limited</h3>
+                                    <h4 className="text-lg text-gray-300 mt-1 font-medium">Software Trainer</h4>
                                 </div>
                                 <div className="flex flex-col md:items-end mt-2 md:mt-0 text-sm text-gray-400 space-y-1">
-                                    <div className="flex items-center gap-1">
-                                        <Calendar size={14} />
-                                        <span>September 2024 - Present</span>
-                                    </div>
                                     <div className="flex items-center gap-1">
                                         <MapPin size={14} />
                                         <span>Chennai, India</span>
                                     </div>
+                                    <div className="flex items-center gap-1">
+                                        <Calendar size={14} />
+                                        <span>September 2024 - February 2025</span>
+                                    </div>
                                 </div>
                             </div>
 
-                            <ul className="space-y-3 text-gray-300 list-disc list-inside marker:text-primary">
+                            <ul className="space-y-3 text-gray-300 list-disc list-outside pl-5 marker:text-primary">
                                 <li>
                                     <strong className="text-white">TASMAC E2E Project:</strong> Conducted end-to-end training programs for government staff, focusing on the adoption and effective use of digital systems.
                                 </li>

@@ -13,13 +13,13 @@ const Projects = () => {
                     {/* Project 1 */}
                     <div className="group relative rounded-2xl overflow-hidden glass border border-gray-700 hover:border-primary/50 transition-colors duration-300">
                         {/* Image Placeholder */}
-                        <div className="h-64 bg-gray-800 relative overflow-hidden">
-                            <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-60 z-10"></div>
-                            {/* Decorative generic graphic for project */}
-                            <div className="w-full h-full flex items-center justify-center bg-gray-900 group-hover:scale-105 transition-transform duration-500">
-                                <Layers size={64} className="text-gray-700 group-hover:text-primary transition-colors duration-300" />
-                                <span className="sr-only">E-Farming System Preview</span>
-                            </div>
+                        <div className="h-64 relative overflow-hidden">
+                            <div className="absolute inset-0 bg-dark/20 group-hover:bg-dark/0 transition-colors duration-500 z-10"></div>
+                            <img
+                                src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                alt="E-Farming System"
+                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            />
                         </div>
 
                         <div className="p-8 relative z-20 -mt-10">
