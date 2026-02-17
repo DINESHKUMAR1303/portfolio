@@ -3,16 +3,16 @@ import { Briefcase, Code, Database, Server, Smartphone, PenTool } from 'lucide-r
 
 const Skills = () => {
     const skills = [
-        { name: 'HTML5', level: '95%', icon: <Code size={20} /> },
-        { name: 'CSS3', level: '90%', icon: <PenTool size={20} /> },
-        { name: 'Tailwind CSS', level: '85%', icon: <PenTool size={20} /> },
-        { name: 'JavaScript', level: '90%', icon: <Code size={20} /> },
-        { name: 'React.js', level: '85%', icon: <Smartphone size={20} /> },
-        { name: 'Bootstrap', level: '80%', icon: <PenTool size={20} /> },
-        { name: 'Node.js', level: '75%', icon: <Server size={20} /> },
-        { name: 'Express.js', level: '75%', icon: <Server size={20} /> },
-        { name: 'MongoDB', level: '80%', icon: <Database size={20} /> },
-        { name: 'Git/GitHub', level: '85%', icon: <Briefcase size={20} /> },
+        { name: 'HTML5', icon: <Code size={20} /> },
+        { name: 'CSS3', icon: <PenTool size={20} /> },
+        { name: 'Tailwind CSS', icon: <PenTool size={20} /> },
+        { name: 'JavaScript', icon: <Code size={20} /> },
+        { name: 'React.js', icon: <Smartphone size={20} /> },
+        { name: 'Bootstrap', icon: <PenTool size={20} /> },
+        { name: 'Node.js', icon: <Server size={20} /> },
+        { name: 'Express.js', icon: <Server size={20} /> },
+        { name: 'MongoDB', icon: <Database size={20} /> },
+        { name: 'Git/GitHub', icon: <Briefcase size={20} /> },
     ];
 
     return (
@@ -27,31 +27,23 @@ const Skills = () => {
                         Technical <span className="gradient-text">Skills</span>
                     </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto">
-                        A comprehensive list of technologies and tools I work with to build robust applications.
+                        My tech stack for building scalable and efficient applications.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                     {skills.map((skill, index) => (
                         <div
                             key={index}
-                            className="group relative p-6 glass rounded-xl hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-2"
+                            className="group relative p-6 glass rounded-2xl border border-white/10 hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/20"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                            <div className="relative z-10 flex flex-col items-center">
-                                <div className="p-4 bg-dark/50 rounded-full text-primary mb-4 group-hover:text-white group-hover:bg-primary transition-colors duration-300">
+                            <div className="relative z-10 flex flex-col items-center gap-3">
+                                <div className="p-3 bg-white/5 rounded-xl text-primary group-hover:text-white group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-secondary transition-all duration-300 shadow-inner shadow-white/10">
                                     {skill.icon}
                                 </div>
-                                <h3 className="text-lg font-semibold text-white mb-2">{skill.name}</h3>
-
-                                <div className="w-full bg-gray-700 h-2 rounded-full overflow-hidden mt-2">
-                                    <div
-                                        className="bg-gradient-to-r from-primary to-secondary h-full rounded-full transition-all duration-1000 ease-out"
-                                        style={{ width: skill.level }}
-                                    ></div>
-                                </div>
-                                <span className="text-xs text-gray-400 mt-2 block w-full text-right">{skill.level}</span>
+                                <h3 className="text-lg font-semibold text-gray-200 group-hover:text-white transition-colors">{skill.name}</h3>
                             </div>
                         </div>
                     ))}

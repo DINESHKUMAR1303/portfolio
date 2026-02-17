@@ -11,7 +11,7 @@ import Background from './components/Background';
 
 function App() {
   return (
-    <div className="bg-dark min-h-screen text-gray-100 font-sans selection:bg-primary selection:text-white relative">
+    <div className="min-h-screen text-gray-100 font-sans selection:bg-primary selection:text-white relative">
       <Background />
       <Navbar />
       <main>

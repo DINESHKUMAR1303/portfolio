@@ -111,21 +111,21 @@ const Background = () => {
         <div className="fixed inset-0 w-full h-full -z-50 bg-dark overflow-hidden pointer-events-none">
             {/* Background Image with Overlay */}
             <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay"
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
                 style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop')` // Coding/Laptop Image
+                    backgroundImage: `url('https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=2070&auto=format&fit=crop')` // Dark Code Screen
                 }}
             ></div>
 
             {/* Dark Gradient Overlay for Readability */}
-            <div className="absolute inset-0 bg-gradient-to-b from-dark via-dark/90 to-dark"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/90 to-dark/95"></div>
 
-            {/* Ambient Background Glows */}
-            <div className="absolute inset-0">
+            {/* Ambient Background Glows - REMOVED for less contrast */}
+            {/* <div className="absolute inset-0">
                 <div className="absolute left-[-10%] top-[-10%] w-[40%] h-[40%] rounded-full bg-primary/20 opacity-20 blur-[120px] animate-pulse"></div>
                 <div className="absolute right-[-10%] bottom-[-10%] w-[40%] h-[40%] rounded-full bg-secondary/20 opacity-20 blur-[120px] animate-pulse" style={{ animationDelay: '2s' }}></div>
                 <div className="absolute left-[40%] top-[40%] w-[30%] h-[30%] rounded-full bg-cyan-500/10 opacity-10 blur-[100px] animate-float" style={{ animationDelay: '1s' }}></div>
-            </div>
+            </div> */}
 
             {/* Particle Network */}
             {init && (

@@ -103,22 +103,22 @@ const Contact = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label htmlFor="user_name" className="block text-sm font-medium text-gray-400 mb-2">Name</label>
-                                <input type="text" name="user_name" id="user_name" required className="w-full px-4 py-3 bg-dark/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500 transition-all" placeholder="Your Name" />
+                                <input type="text" name="user_name" id="user_name" required className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500 transition-all" placeholder="Your Name" />
                             </div>
                             <div>
                                 <label htmlFor="user_email" className="block text-sm font-medium text-gray-400 mb-2">Email</label>
-                                <input type="email" name="user_email" id="user_email" required className="w-full px-4 py-3 bg-dark/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500 transition-all" placeholder="your@email.com" />
+                                <input type="email" name="user_email" id="user_email" required className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500 transition-all" placeholder="your@email.com" />
                             </div>
                         </div>
 
                         <div>
                             <label htmlFor="subject" className="block text-sm font-medium text-gray-400 mb-2">Subject</label>
-                            <input type="text" name="subject" id="subject" required className="w-full px-4 py-3 bg-dark/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500 transition-all" placeholder="Project Inquiry" />
+                            <input type="text" name="subject" id="subject" required className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500 transition-all" placeholder="Project Inquiry" />
                         </div>
 
                         <div>
                             <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2">Message</label>
-                            <textarea name="message" id="message" rows="5" required className="w-full px-4 py-3 bg-dark/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500 transition-all resize-none" placeholder="Tell me about your project..."></textarea>
+                            <textarea name="message" id="message" rows="5" required className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500 transition-all resize-none" placeholder="Tell me about your project..."></textarea>
                         </div>
 
                         <button
