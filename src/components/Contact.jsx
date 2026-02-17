@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { Mail, Phone, Linkedin, Github, Send, Loader2 } from 'lucide-react';
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const form = useRef();
