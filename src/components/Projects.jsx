@@ -1,32 +1,44 @@
-import React from 'react';
-import { ExternalLink, Github, Layers, Code } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
     return (
         <section id="projects" className="py-20 bg-transparent">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl md:text-4xl font-bold font-heading text-center mb-16">
+                <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="text-3xl md:text-4xl font-bold font-heading text-center mb-16"
+                >
                     Featured <span className="gradient-text">Projects</span>
-                </h2>
+                </motion.h2>
 
                 <div className="flex justify-center items-center">
-                    <div className="max-w-2xl w-full">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                        className="max-w-2xl w-full"
+                    >
                         {/* Project 1 */}
                         <div className="group relative rounded-2xl overflow-hidden glass border border-gray-700 hover:border-primary/50 transition-colors duration-300">
                             {/* Image Placeholder */}
                             <div className="h-64 relative overflow-hidden">
                                 <div className="absolute inset-0 bg-dark/20 group-hover:bg-dark/0 transition-colors duration-500 z-10"></div>
                                 <img
-                                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                    src="https://dineshkumar1303.github.io/PRIDE-OF-COWS/assets/0fact-CGBtXrZd.jpg"
                                     alt="E-Farming System"
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 />
                             </div>
 
                             <div className="p-8 relative z-20 -mt-10">
-                                <div className="bg-dark/80 backdrop-blur-md p-6 rounded-xl border border-gray-700 shadow-xl">
+                                <div className="bg-dark/80 backdrop-blur-md p-6 rounded-xl border border-gray-700 shadow-xl group-hover:translate-y-[-5px] transition-transform duration-300">
                                     <div className="flex justify-between items-center mb-4">
-                                        <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">E-Farming System</h3>
+                                        <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">Pride of Cows</h3>
                                         <div className="flex gap-4">
                                             <a href="https://github.com/DINESHKUMAR1303/PRIDE-OF-COWS" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" title="View Code">
                                                 <Github size={20} />
@@ -57,12 +69,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-
-                        {/* Add a "Coming Soon" or secondary project placeholder if desired to fill the grid, or just center the single project. 
-               For now, I'll stick to the single main project mentioned in the resume but center it or leave as grid.
-               I'll add a "More Coming Soon" card to balance the layout. */}
-
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
